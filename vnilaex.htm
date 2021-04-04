@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>vanila js example</title>
+    </head>
+    <body>
+        <h2 id="myText">
+            welcome
+        </h2>
+        <button id="mybutton" onclick="myFunction('hello')">Click ME</button>
+        <button id="mynewbutton" onclick="myFunction('dumy')">Click ME</button>
+    </body>
+</html>
+<script>
+    function myFunction(myValue) {
+        // alert("This function is working");
+        // console.log("working");
+        var text = document.getElementById('myText');
+        if (text.innerHTML == "welcome")
+        {
+            text.innerHTML = myValue;
+        }
+        else
+        {
+            text.innerHTML = "welcome";
+        }
+        // console.log(text.innerHTML);
+        // text.innerHTML = "goodbye";
+
+    }
+</script>
